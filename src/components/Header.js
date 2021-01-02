@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Billings from "./Billings";
+// import Billings from "./Billings";
 
 const Header = () => {
   const user = useSelector((state) => state.auth);
@@ -19,7 +19,7 @@ const Header = () => {
       default:
         return [
           <li key="1">
-            <Billings />
+            {/* <Billings /> */}
           </li>,
           <li key="2" style={{ margin: "0 10px " }}>
             Credits: {user.credits}
