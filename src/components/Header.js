@@ -13,7 +13,7 @@ const Header = () => {
       case false:
         return (
           <li>
-            <a href="/auth/google">Login with Google</a>
+            <a href="https://users-feedback-app.herokuapp.com/auth/google">Login with Google</a>
           </li>
         );
       default:
