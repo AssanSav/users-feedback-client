@@ -25,7 +25,7 @@ const Header = () => {
             Credits: {user.credits}
           </li>,
           <li key="3">
-            <a href="/api/logout">Logout</a>
+            <a href="https://users-feedback-app.herokuapp.com//api/logout">Logout</a>
           </li>,
         ];
     }
