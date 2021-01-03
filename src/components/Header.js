@@ -5,6 +5,7 @@ import Billings from "./Billings";
 
 const Header = () => {
   const user = useSelector((state) => state.auth);
+  let BASE_URL = process.env.REACT_APP_URL
 
   const renderContent = () => {
     switch (user) {
@@ -13,7 +14,7 @@ const Header = () => {
       case false:
         return (
           <li>
-            <a href="https://users-feedback-app.herokuapp.com/auth/google">Login with Google</a>
+            <a href={`${BASE_URL}/auth/google`}>Login with Google</a>
           </li>
         );
       default:
@@ -25,7 +26,7 @@ const Header = () => {
             Credits: {user.credits}
           </li>,
           <li key="3">
-            <a href="https://users-feedback-app.herokuapp.com//api/logout">Logout</a>
+            <a href={`${BASE_URL}/api/users/logout`}>Logout</a>
           </li>,
         ];
     }
