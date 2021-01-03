@@ -1,8 +1,7 @@
 import { FETCH_USER } from "../actions/types";
 
 const initialState = {
-  user: {},
-  loggedIn: false,
+  user: null,
 };
 
 const auth = (state = initialState, action) => {
@@ -10,8 +9,7 @@ const auth = (state = initialState, action) => {
     case FETCH_USER:
       //return action.payload || false;
       return {
-        user: action.payload,
-        loggedIn: true,
+        user: action.payload || false
       };
     default:
       return state;

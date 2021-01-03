@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import Billings from "./Billings";
 
 const Header = () => {
-  const user = useSelector((state) => state.auth);
+  const user = useSelector((state) => state.auth.user);
   let BASE_URL = process.env.REACT_APP_URL
 
+  console.log()
   const renderContent = () => {
     switch (user) {
       case null:
