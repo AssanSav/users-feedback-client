@@ -7,7 +7,7 @@ const Header = () => {
   const user = useSelector((state) => state.auth.user);
   let BASE_URL = process.env.REACT_APP_URL;
 
-  console.log();
+  console.log(user);
   const renderContent = () => {
     switch (user) {
       case null:
