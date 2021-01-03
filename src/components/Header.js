@@ -15,7 +15,7 @@ const Header = () => {
       case false:
         return (
           <li>
-            <Link href={`${BASE_URL}/auth/google`}>Login with Google</Link>
+            <Link to={`${BASE_URL}/auth/google`}>Login with Google</Link>
           </li>
         );
       default:
