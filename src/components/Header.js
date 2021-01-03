@@ -26,7 +26,7 @@ const Header = () => {
             Credits: {user.credits}
           </li>,
           <li key="3">
-            <a href={`${BASE_URL}/api/users/logout`}>Logout</a>
+            <a href={`${BASE_URL}/api/logout`}>Logout</a>
           </li>,
         ];
     }
