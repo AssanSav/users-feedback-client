@@ -5,9 +5,9 @@ import Billings from "./Billings";
 
 const Header = () => {
   const user = useSelector((state) => state.auth.user);
-  let BASE_URL = process.env.REACT_APP_URL
+  let BASE_URL = process.env.REACT_APP_URL;
 
-  console.log()
+  console.log();
   const renderContent = () => {
     switch (user) {
       case null:
@@ -15,7 +15,7 @@ const Header = () => {
       case false:
         return (
           <li>
-            <a href={`${BASE_URL}/auth/google`}>Login with Google</a>
+            <Link href={`${BASE_URL}/auth/google`}>Login with Google</Link>
           </li>
         );
       default:
