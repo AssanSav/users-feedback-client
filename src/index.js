@@ -8,7 +8,27 @@ import reduxThunk from "redux-thunk";
 import logger from "redux-logger";
 import rootReducer from "./components/reducers/rootReducer";
 import App from "./components/App";
+// import axios from "axios";
+// window.axios = axios
 
+// const survey = {
+//   title: "My title",
+//   subject: "My subject",
+//   body: "My email body",
+//   userId: "5ff27689f56d480ceb901d60",
+//   recipients:
+//     "assane.savadogo81@gmail.com, assan.sawadogo81@gmail.com, assane.savadogo1981@gmail.com",
+// };
+
+// const surveys = async () => {
+//   const res = await axios.post(
+//     `${process.env.REACT_APP_URL}/api/surveys`,
+//     survey,
+//     { withCredentials: true }
+//   );
+//   return res;
+// };
+// surveys()
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
   rootReducer,

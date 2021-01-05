@@ -7,7 +7,7 @@ const Header = () => {
   const user = useSelector((state) => state.auth.user);
   let BASE_URL = process.env.REACT_APP_URL;
 
-  console.log(user);
+  console.log();
   const renderContent = () => {
     switch (user) {
       case null:
@@ -15,7 +15,7 @@ const Header = () => {
       case false:
         return (
           <li>
-            <Link to={`${BASE_URL}/auth/google`}>Login with Google</Link>
+            <a href={`${BASE_URL}/auth/google`}>Login with Google</a>
           </li>
         );
       default:
